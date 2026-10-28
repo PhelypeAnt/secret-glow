@@ -10,7 +10,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style></head>
 <body>
-<div class="announcement">Sua confiança é o detalhe mais bonito · atendimento pelo WhatsApp</div>
 <header class="nav"><a class="brand" href="#inicio" aria-label="Secret Glow início">secret <em>glow</em></a><nav class="links" aria-label="Navegação principal"><a href="#colecao">Coleção</a><a href="#sobre">Nossa essência</a><a href="#avaliacoes">Avaliações</a><a href="#contato">Contato</a></nav><a class="nav-cta wa-link" href="#" target="_blank" rel="noopener">Fale com a gente <span></span></a></header>
 <main><section class="hero" id="inicio"><div class="hero-copy"><div class="eyebrow">Lingerie para sentir, vestir e revelar</div><h1>Vista a sua <em>essência.</em></h1><p>Peças que acompanham as suas curvas e despertam a confiança que sempre esteve aí. Escolha o seu próximo brilho.</p><div class="hero-actions"><a class="btn wa-link" href="#" target="_blank" rel="noopener">Encontre a sua peça <span></span></a><a class="btn secondary" href="#colecao">Explorar coleção <span></span></a></div><div class="hero-note">Atendimento próximo, do seu jeito.</div></div><div class="hero-art" role="img" aria-label="Imagem editorial de moda feminina"><div class="art-tag">feito para<br>você brilhar</div><div class="art-caption">Segura de si. Sempre.</div></div></section>
 <div class="trust"><div class="trust-item"><b>01</b>Escolha com liberdade</div><div class="trust-item"><b>02</b>Atendimento pelo WhatsApp</div><div class="trust-item"><b>03</b>Um toque só seu</div></div>
@@ -32,6 +31,7 @@ document.querySelectorAll('.wa-link').forEach(link=>{const product=link.dataset.
 document.querySelectorAll('.ig-link').forEach(link=>link.href=CONFIG.instagram);document.getElementById('year').textContent=new Date().getFullYear();
 const motionButton=document.querySelector('.motion-toggle');const reviewTrack=document.querySelector('.review-track');motionButton.addEventListener('click',()=>{const paused=reviewTrack.classList.toggle('is-paused');motionButton.setAttribute('aria-pressed',String(paused));motionButton.textContent=paused?'Retomar movimento':'Pausar movimento'});document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelector('.filter.active').classList.remove('active');button.classList.add('active');document.querySelectorAll('.card').forEach(card=>card.hidden=button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter)}));
 </script></body></html>
+
 
 
 
